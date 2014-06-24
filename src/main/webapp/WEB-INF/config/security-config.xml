@@ -10,18 +10,7 @@
 		authorities-by-username-query="select username, authority from han_authorities where username = ?"
 		users-by-username-query="select username, password, enabled from han_user where username = ?" />
 
-	<security:user-service id="userService">
-		<security:user name="leo" authorities="APP_ADMIN"
-			password="540071" />
-		<security:user name="han" authorities="APP_VIEWER"
-			password="540071" />
-	</security:user-service>
-
-
 	<security:authentication-manager>
-		<security:authentication-provider
-			user-service-ref="userService">
-		</security:authentication-provider>
 		<security:authentication-provider
 			user-service-ref="jdbcUserService">
 		</security:authentication-provider>
