@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/jsps/common/template.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsps/common/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsps/common/menu.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsps/common/footer.jsp" />
+	</definition>
+
+
+	<definition name="home" extends="baseLayout">
+		<put-attribute name="title" value="title.home" />
+		<put-attribute name="body" value="/WEB-INF/jsps/home.jsp" />
+	</definition>
+
+	<definition name="actors" extends="baseLayout">
+		<put-attribute name="title" value="title.actors" />
+		<put-attribute name="body" value="/WEB-INF/jsps/actors.jsp" />
+	</definition>
+
+
+	<definition name="addactor" extends="baseLayout">
+		<put-attribute name="title" value="title.addactor" />
+		<put-attribute name="body" value="/WEB-INF/jsps/addactor.jsp" />
+	</definition>
+
+
+	<definition name="addactorresult" extends="baseLayout">
+		<put-attribute name="title" value="title.addactorresult" />
+		<put-attribute name="body" value="/WEB-INF/jsps/addactorresult.jsp" />
+	</definition>
+
+
+	<definition name="login" extends="baseLayout">
+		<put-attribute name="title" value="title.login" />
+		<put-attribute name="body" value="/WEB-INF/jsps/login.jsp" />
+	</definition>
+
+	<definition name="adduser" extends="baseLayout">
+		<put-attribute name="title" value="title.adduser" />
+		<put-attribute name="body" value="/WEB-INF/jsps/adduser.jsp" />
+	</definition>
+
+
+	<definition name="useradded" extends="baseLayout">
+		<put-attribute name="title" value="title.useradded" />
+		<put-attribute name="body" value="/WEB-INF/jsps/useradded.jsp" />
+	</definition>
+
+
+	<definition name="errors" extends="baseLayout">
+		<put-attribute name="title" value="title.errors" />
+		<put-attribute name="body" value="/WEB-INF/jsps/errors.jsp" />
+	</definition>
+	
+	<definition name="jquery" extends="baseLayout">
+		<put-attribute name="title" value="title.jquery" />
+		<put-attribute name="body" value="/WEB-INF/jsps/jquery.jsp" />
+	</definition>
+	
+</tiles-definitions>
